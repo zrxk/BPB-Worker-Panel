@@ -2550,7 +2550,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
             try {
                 document.body.style.cursor = 'wait';
                 const applyButtonVal = applyButton.value;
-                applyButton.value = '⌛ Loading...';
+                applyButton.value = '⌛ 加载中...';
 
                 const response = await fetch('/panel', {
                     method: 'POST',
@@ -2562,7 +2562,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                 applyButton.value = applyButtonVal;
 
                 if (response.ok) {
-                    alert('Parameters applied successfully 😎');
+                    alert('参数应用成功 😎');
                     window.location.reload(true);
                 } else {
                     const errorMessage = await response.text();
