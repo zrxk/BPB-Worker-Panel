@@ -2662,7 +2662,7 @@ const renderLoginPage = async () => {
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Login</title>
+    <title>用户登录</title>
     <style>
 
         html, body { height: 100%; margin: 0; }
@@ -2726,16 +2726,16 @@ const renderLoginPage = async () => {
     </head>
     <body>
         <div class="container">
-            <h1>BPB Panel <span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
+            <h1>BPB 面板 <span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
             <div class="form-container">
-                <h2>User Login</h2>
+                <h2>用户登录</h2>
                 <form id="loginForm">
                     <div class="form-control">
-                        <label for="password">Password</label>
+                        <label for="password">密码</label>
                         <input type="password" id="password" name="password" required>
                     </div>
                     <div id="passwordError" style="color: red; margin-bottom: 10px;"></div>
-                    <button type="submit" class="button">Login</button>
+                    <button type="submit" class="button">登录</button>
                 </form>
             </div>
         </div>
@@ -2756,7 +2756,7 @@ const renderLoginPage = async () => {
                 if (response.ok) {
                     window.location.href = '/panel';
                 } else {
-                    passwordError.textContent = '⚠️ Wrong Password!';
+                    passwordError.textContent = '⚠️ 密码错误！';
                     const errorMessage = await response.text();
                     console.error('Login failed:', errorMessage);
                 }
