@@ -2026,7 +2026,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 	<body>
 		<h1>BPB 面板<span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
 		<div class="form-container">
-            <h2>碎片设置 ⚙️</h2>
+            <h2>片段设置 ⚙️</h2>
 			<form id="configForm">
 				<div class="form-control">
 					<label for="remoteDNS">🌏 远程 DNS</label>
@@ -2060,7 +2060,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 					<label for="outProxy">✈️ 链式代理</label>
 					<input type="text" id="outProxy" name="outProxy" value="${outProxy}">
 				</div>
-                <h2>碎片路由 ⚙️</h2>
+                <h2>片段路由 ⚙️</h2>
 				<div class="form-control" style="margin-bottom: 20px;">			
                     <div class="routing">
                         <input type="checkbox" id="block-ads" name="block-ads" style="margin: 0; grid-column: 2;" value="true" ${blockAds ? 'checked' : ''}>
@@ -2210,7 +2210,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                         </td>
                         <td>
                             <button onclick="openQR('sing-box://import-remote-profile?url=https://${hostName}/sub/${userID}?app=sfa#BPB-Normal', 'Normal Subscription')" style="margin-bottom: 8px;">
-                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                二 维 码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="copyToClipboard('https://${hostName}/sub/${userID}?app=sfa#BPB-Normal', false)">
                                 复制订阅<span class="material-symbols-outlined">format_list_bulleted</span>
@@ -2219,7 +2219,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                     </tr>
 				</table>
 			</div>
-			<h2>FRAGMENT SUB ⛓️</h2>
+			<h2>片段订阅 ⛓️</h2>
 			<div class="table-container">
                 <table id="frag-sub-table">
                     <tr>
@@ -2247,7 +2247,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                         </td>
                         <td>
                             <button onclick="openQR('https://${hostName}/fragsub/${userID}#BPB Fragment', 'Fragment Subscription')" style="margin-bottom: 8px;">
-                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                二 维 码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="copyToClipboard('https://${hostName}/fragsub/${userID}#BPB Fragment', true)">
                                 复制订阅<span class="material-symbols-outlined">format_list_bulleted</span>
@@ -2256,12 +2256,12 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                     </tr>
                 </table>
             </div>
-            <h2>WARP SUB 🔗</h2>
+            <h2>WARP 订阅 🔗</h2>
 			<div class="table-container">
 				<table id="normal-configs-table">
 					<tr>
-						<th>Application</th>
-						<th>Subscription</th>
+						<th>应用程序</th>
+						<th>订阅链接</th>
 					</tr>
 					<tr>
                         <td>
@@ -2284,7 +2284,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                         </td>
 						<td>
                             <button onclick="openQR('https://${hostName}/warpsub/${userID}#BPB-Warp', 'Warp Subscription')" style="margin-bottom: 8px;">
-                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                二 维 码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="copyToClipboard('https://${hostName}/warpsub/${userID}#BPB-Warp', false)">
                                 复制订阅<span class="material-symbols-outlined">format_list_bulleted</span>
@@ -2304,7 +2304,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                         </td>
 						<td>
                             <button onclick="openQR('sing-box://import-remote-profile?url=https://${hostName}/warpsub/${userID}?app=singbox#BPB-Warp', 'Warp Subscription')" style="margin-bottom: 8px;">
-                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                二 维 码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="copyToClipboard('https://${hostName}/warpsub/${userID}?app=singbox#BPB-Warp', false)">
                                 复制订阅<span class="material-symbols-outlined">format_list_bulleted</span>
@@ -2313,12 +2313,12 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 					</tr>
 				</table>
 			</div>
-            <h2>FRAGMENT - NEKORAY ⛓️</h2>
+            <h2>片段 - NEKORAY ⛓️</h2>
             <div class="table-container">
 				<table id="custom-configs-table">
 					<tr style="text-wrap: nowrap;">
-						<th>Config Address</th>
-						<th>Fragment Config</th>
+						<th>配置地址</th>
+						<th>片段配置</th>
 					</tr>					
 					${await genCustomConfRow(fragConfigs)}
 				</table>
@@ -2327,17 +2327,17 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <form id="passwordChangeForm">
-                        <h2>Change Password</h2>
+                        <h2>修改密码</h2>
                         <div class="form-control">
-                            <label for="newPassword">New Password</label>
+                            <label for="newPassword">新密码</label>
                             <input type="password" id="newPassword" name="newPassword" required>
                             </div>
                         <div class="form-control">
-                            <label for="confirmPassword">Confirm Password</label>
+                            <label for="confirmPassword">确认密码</label>
                             <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </div>
                         <div id="passwordError" style="color: red; margin-bottom: 10px;"></div>
-                        <button id="changePasswordBtn" type="submit" class="button">Change Password</button>
+                        <button id="changePasswordBtn" type="submit" class="button">修改密码</button>
                     </form>
                 </div>
             </div>
@@ -2485,7 +2485,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 			textarea.select();
 			document.execCommand('copy');
 			document.body.removeChild(textarea);
-			alert('📋 Copied to clipboard:\\n\\n' +  value);
+			alert('📋 已复制到剪贴板：\\n\\n' +  value);
 		}
 
         const applySettings = async (event, configForm) => {
