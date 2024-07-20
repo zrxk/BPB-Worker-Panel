@@ -2029,17 +2029,17 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
             <h2>FRAGMENT SETTINGS ⚙️</h2>
 			<form id="configForm">
 				<div class="form-control">
-					<label for="remoteDNS">🌏 Remote DNS</label>
+					<label for="remoteDNS">🌏 远程 DNS</label>
 					<input type="url" id="remoteDNS" name="remoteDNS" value="${remoteDNS}" required>
 				</div>
 				<div class="form-control">
-					<label for="localDNS">🏚️ Local DNS</label>
+					<label for="localDNS">🏚️ 本地 DNS</label>
 					<input type="text" id="localDNS" name="localDNS" value="${localDNS}"
 						pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|localhost$"
 						title="Please enter a valid DNS IP Address or localhost!"  required>
 				</div>	
 				<div class="form-control">
-					<label for="fragmentLengthMin">📐 Length</label>
+					<label for="fragmentLengthMin">📐 带宽</label>
 					<div style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: baseline;">
 						<input type="number" id="fragmentLengthMin" name="fragmentLengthMin" value="${lengthMin}" min="10" required>
 						<span style="text-align: center; white-space: pre;"> - </span>
