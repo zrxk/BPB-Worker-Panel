@@ -2064,24 +2064,24 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 				<div class="form-control" style="margin-bottom: 20px;">			
                     <div class="routing">
                         <input type="checkbox" id="block-ads" name="block-ads" style="margin: 0; grid-column: 2;" value="true" ${blockAds ? 'checked' : ''}>
-                        <label for="block-ads">Block Ads.</label>
+                        <label for="block-ads">拦截广告</label>
                     </div>
                     <div class="routing">
 						<input type="checkbox" id="bypass-iran" name="bypass-iran" style="margin: 0; grid-column: 2;" value="true" ${bypassIran ? 'checked' : ''}>
-                        <label for="bypass-iran">Bypass Iran</label>
+                        <label for="bypass-iran">绕过伊朗</label>
 					</div>
                     <div class="routing">
 						<input type="checkbox" id="block-porn" name="block-porn" style="margin: 0; grid-column: 2;" value="true" ${blockPorn ? 'checked' : ''}>
-                        <label for="block-porn">Block Porn</label>
+                        <label for="block-porn">过滤色情</label>
 					</div>
                     <div class="routing">
 						<input type="checkbox" id="bypass-lan" name="bypass-lan" style="margin: 0; grid-column: 2;" value="true" ${bypassLAN ? 'checked' : ''}>
-                        <label for="bypass-lan">Bypass LAN</label>
+                        <label for="bypass-lan">绕过局域网</label>
 					</div>
 				</div>
-                <h2>PROXY IP ⚙️</h2>
+                <h2>代理 IP ⚙️</h2>
 				<div class="form-control">
-					<label for="proxyIP">📍 IP or Domain</label>
+					<label for="proxyIP">📍 IP 或域名</label>
 					<input type="text" id="proxyIP" name="proxyIP" value="${proxyIP}">
 				</div>
                 <h2>CLEAN IP ⚙️</h2>
@@ -2090,15 +2090,15 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 					<input type="text" id="cleanIPs" name="cleanIPs" value="${cleanIPs.replaceAll(",", " , ")}">
 				</div>
                 <div class="form-control">
-                    <label>🔎 Online Scanner</label>
+                    <label>🔎 在线扫描</label>
                     <a href="https://scanner.github1.cloud/" id="scanner" name="scanner" target="_blank">
                         <button type="button" class="button">
-                            Scan now
+                            开始扫描
                             <span class="material-symbols-outlined" style="margin-left: 5px;">open_in_new</span>
                         </button>
                     </a>
                 </div>
-                <h2>PORTS ⚙️</h2>
+                <h2>端口 ⚙️</h2>
                 <div class="table-container">
                     <table id="frag-sub-table">
                         <tr>
