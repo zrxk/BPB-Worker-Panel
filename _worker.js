@@ -2141,8 +2141,8 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 			<div class="table-container">
 				<table id="normal-configs-table">
 					<tr>
-						<th>Application</th>
-						<th>Subscription</th>
+						<th>应用程序</th>
+						<th>订阅链接</th>
 					</tr>
 					<tr>
                         <td>
@@ -2173,7 +2173,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                         </td>
 						<td>
                             <button onclick="openQR('https://${hostName}/sub/${userID}#BPB-Normal', 'Normal Subscription')" style="margin-bottom: 8px;">
-                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                二 维 码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="copyToClipboard('https://${hostName}/sub/${userID}#BPB-Normal', false)">
                                 复制订阅<span class="material-symbols-outlined">format_list_bulleted</span>
