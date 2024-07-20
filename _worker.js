@@ -1773,7 +1773,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                 </td>
                 <td>
                     <button onclick="copyToClipboard('${encodeURIComponent(JSON.stringify(config.config, null, 4))}', true)">
-                        复制 Config 
+                        复制配置 
                         <span class="material-symbols-outlined">copy_all</span>
                     </button>
                 </td>
@@ -2024,7 +2024,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 	</head>
 	
 	<body>
-		<h1>BPB 面板<span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
+		<h1>BPB 面板 <span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
 		<div class="form-container">
             <h2>片段设置 ⚙️</h2>
 			<form id="configForm">
@@ -2036,7 +2036,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 					<label for="localDNS">🏚️ 本地 DNS</label>
 					<input type="text" id="localDNS" name="localDNS" value="${localDNS}"
 						pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|localhost$"
-						title="Please enter a valid DNS IP Address or localhost!"  required>
+						title="请输入一个有效的DNS IP地址或者主机！"  required>
 				</div>	
 				<div class="form-control">
 					<label for="fragmentLengthMin">📐 带宽</label>
@@ -2223,8 +2223,8 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 			<div class="table-container">
                 <table id="frag-sub-table">
                     <tr>
-                        <th style="text-wrap: nowrap;">Application</th>
-                        <th style="text-wrap: nowrap;">Fragment Subscription</th>
+                        <th style="text-wrap: nowrap;">应用程序</th>
+                        <th style="text-wrap: nowrap;">订阅链接</th>
                     </tr>
                     <tr>
                         <td style="text-wrap: nowrap;">
