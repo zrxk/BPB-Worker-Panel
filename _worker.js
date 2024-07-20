@@ -2731,7 +2731,7 @@ const renderLoginPage = async () => {
                 <h2>用户登录</h2>
                 <form id="loginForm">
                     <div class="form-control">
-                        <label for="password">password</label>
+                        <label for="password">密码：</label>
                         <input type="password" id="password" name="password" required>
                     </div>
                     <div id="passwordError" style="color: red; margin-bottom: 10px;"></div>
